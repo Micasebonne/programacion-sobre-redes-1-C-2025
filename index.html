@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP Redes</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <canvas id="network"></canvas>
+  <canvas id="matrix"></canvas>
+
+  <!-- Pantalla de inicio -->
+  <div id="welcome-screen" class="welcome-screen">
+    <h1 id="typing-effect"></h1>
+    <p  class="loading">Cargando protocolo...</p>
+    <button class="start-btn" onclick="startQuiz()">Iniciar</button>
+  </div>
+
+  <!-- Terminal -->
+  <div id="quiz-screen" class="terminal" style="display: none;">
+    <h1>Trabajo Práctico - Programación sobre Redes</h1>
+    <p>Microsoft Windows [Versión 10.0.26100.3775]</p>
+    <p>(c) Microsoft Corporation. Todos los derechos reservados.</p>
+    <div id="question-container" class="question-container"></div>
+    <br>
+    <div id="nav-buttons">
+      <button id="prev-btn" class="nav-btn" onclick="prevQuestion()">Anterior</button>
+      <button id="next-btn" class="nav-btn" onclick="nextQuestion()">Siguiente</button>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
