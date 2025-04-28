@@ -404,7 +404,55 @@ Ventajas:
 Desventajas:
 * Dependencia del servidor: Si el servidor DHCP falla, los dispositivos nuevosno podrán obtener una dirección IP y no podrán acceder a la red.
 
-* Seguridad: Si un servidor DHCP no está configurado correctamente o es vulnerable, un atacante podría intentar suplantarlo y asignar direcciones IP incorrectas a los dispositivos, lo que podría comprometer la red.`
+* Seguridad: Si un servidor DHCP no está configurado correctamente o es vulnerable, un atacante podría intentar suplantarlo y asignar direcciones IP incorrectas a los dispositivos, lo que podría comprometer la red.`,
+
+"Respuesta 11", //Completar el espacio entre comillas
+
+"Respuesta 12",
+
+"Respuesta 13",
+
+"Respuesta 14",
+
+"Respuesta 15",
+
+"Respuesta 16",
+
+"Respuesta 17",
+
+"Respuesta 18",
+
+"Respuesta 19",
+
+"Respuesta 20",
+
+"Respuesta 21",
+
+"Respuesta 22",
+
+"Respuesta 23",
+
+"Respuesta 24",
+
+"Respuesta 25",
+
+"Respuesta 26",
+
+"Respuesta 27",
+
+"Respuesta 28",
+
+"Respuesta 29",
+
+"Respuesta 30",
+
+"Respuesta 31",
+
+"Respuesta 32",
+
+"Respuesta 33",
+
+"Respuesta 34",
 ];
 
 const questions = data.trim().split('\n');
