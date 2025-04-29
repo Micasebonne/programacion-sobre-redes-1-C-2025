@@ -816,6 +816,12 @@ Actualmente no tengo experiencia profesional en redes, pero he configurado el ro
 <strong>Coa Tomas</strong>
 
 La unica experiencia que tengo con redes es la configuracion de seguridad de la red personal de mi casa, haciendo cambios de contraseñas y reseteo de fabrica del router.
+
+<strong>Manuel Torrealba</strong>
+Tengo experiencia en el área de redes, en procesos cloud como también on-premise. En la empresa donde trabajo, me desempeño como <strong>analista backend IT<strong> y soy responsable del soporte del <strong>ERP<strong>. Este rol me ha llevado a profundizar en la infraestructura de la empresa a nivel de redes, comprendiendo cómo está diseñada y alojada la aplicación, así como su distribución entre los distintos servidores.
+Para garantizar el correcto funcionamiento del ERP, he adquirido conocimientos sobre su alojamiento, la distribución y replicación de información entre los distintos módulos. Además, he desarrollado habilidades en la creación de archivos .bat y scripts para la automatización de procesos en la red, incluyendo la administración de jobs en cada servidor. También tengo experiencia en el análisis de logs para detectar fallos en los procesos y asegurar la disponibilidad de los servidores.
+Mi experiencia me ha permitido entender la interconexión entre la infraestructura en la nube y los sistemas internos, facilitando la resolución de problemas y la optimización del rendimiento de la plataforma ERP.
+
 `
 ,
 ];
