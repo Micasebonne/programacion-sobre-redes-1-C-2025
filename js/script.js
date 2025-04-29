@@ -407,25 +407,108 @@ Desventajas:
 * Seguridad: Si un servidor DHCP no está configurado correctamente o es vulnerable, un atacante podría intentar suplantarlo y asignar direcciones IP incorrectas a los dispositivos, lo que podría comprometer la red.`,
 
 //respuesta11
-`Respuesta 11`, //Completar el espacio entre comillas
+`El DNS es un sistema jerárquico y descentralizado que traduce los nombres de dominio legibles por humanos (como www.google.com) en direcciones IP (como 8.8.8.8), que son necesarias para que los dispositivos se comuniquen entre sí en una red, como Internet.
+
+Esto es importante porque, aunque nosotros recordamos palabras fácilmente, los dispositivos en la red solo entienden direcciones IP. El DNS actúa como una agenda telefónica de Internet, donde buscás el número (IP) correspondiente a un nombre.
+
+<img class="img" src="./imgs/dns_image.png">
+`, //Completar el espacio entre comillas
 
 //respuesta12
-`Respuesta 12`,
+`Las tecnologías Wireless (inalámbricas) permiten la transmisión de datos sin necesidad de cables físicos, utilizando ondas de radio, infrarrojos u otros tipos de señales electromagnéticas. Son ampliamente utilizadas en redes locales (Wi-Fi), comunicaciones móviles (3G/4G/5G), Bluetooth y más.
+
+Cuando hablamos de redes de datos, lo más común es referirse al Wi-Fi, que técnicamente se basa en los estándares IEEE 802.11.
+
+<img class="img" src="./imgs/wifi_standar.png"> <img class="img" src="./imgs/wifi_standar2.png">
+`,
 
 //respuesta13
-`Respuesta 13`,
+`Un proxy, también conocido como servidor proxy, es un intermediario que se ubica entre las solicitudes que realiza un cliente (generalmente, se trata del equipo de un usuario) hacia otro servidor y sus respuestas. Por lo tanto, cada vez que la máquina hace una solicitud, esta se traslada al proxy que, a su vez, la envía al servidor más adecuado en cada caso. Y cuando se reciben datos, el proceso se desempeña de la misma manera.
+
+Usualmente, los servidores proxys se emplean para actuar como puente durante la navegación web. Sin embargo, también existen algunos destinados a otros protocolos, como el FTP. Es relevante saber que el proxy es en realidad un software que se puede ejecutar de manera local o externa. En este sentido, podemos identificar dos tipos de servidores:
+
+* Internos o locales. Son aquellos que se ejecutan desde la propia máquina del usuario y están destinados a la mejora de la privacidad y otras funciones similares.
+
+* De red o externos. Se trata de aquellos que actúan interceptando las solicitudes de manera externa a la máquina del usuario. Por lo tanto, su política de actuación se aplica en todos los equipos que se encuentran conectados a la red dependiente del proxy.
+
+<img class="img" src="./imgs/proxy_image.png">
+`,
 
 //respuesta14
-`Respuesta 14`,
+`El Spanning Tree Protocol (STP) es un protocolo de la capa 2 definido por el estándar IEEE 802.1D. Su objetivo es prevenir bucles en redes con enlaces redundantes, protegiendo así el rendimiento. STP elige un switch raíz (root bridge) y construye un árbol lógico, donde ciertos puertos se bloquean para eliminar caminos redundantes y evitar tormentas de difusión. Así, solo las rutas necesarias quedan activas para la comunicación.
+
+<img class="img" src="./imgs/spanningtree_image.png">
+
+Supongamos una red conformada por tres switches: Switch A, Switch B y Switch C, interconectados de la siguiente manera:
+
+* A ↔ B
+* B ↔ C
+* C ↔ A
+
+La conexión entre C y A genera un enlace redundante, formando un triángulo. Este diseño mejora la disponibilidad, ya que si falla el enlace A-B, los switches seguirán comunicándose mediante C.
+
+No obstante, sin mecanismos de control, como el Spanning Tree Protocol (STP), se produciría un bucle de red, donde los datos circularían indefinidamente, saturando los recursos.
+
+El STP actúa desactivando temporalmente uno de los enlaces para eliminar bucles, y, en caso de fallo de un enlace activo, reactiva dinámicamente el enlace bloqueado para mantener la conectividad.
+ `,
 
 //respuesta15
-`Respuesta 15`,
+`OSPF es un protocolo de enrutamiento con estado, lo que significa que los routers utilizan la información de estado de los enrutadores vecinos para calcular y distribuir la información de enrutamiento que se distribuye en la red. Las redes OSPF se dividen en áreas. Cada área se conecta a un router llamado “router de frontera de área” (ABR, por sus siglas en inglés), que se encarga de distribuir información de enrutamiento entre las áreas. Cada router en una red OSPF mantiene una visión completa de la topología de la red y utiliza este conocimiento para calcular la mejor ruta para el tráfico dentro del ancho de banda disponible.
+
+El costo refleja la calidad y capacidad de un enlace, considerando principalmente el ancho de banda disponible. Por convención, el costo se calcula utilizando la fórmula:
+
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>Costo</mi>
+    <mo>=</mo>
+    <mfrac>
+      <mn>100</mn>
+      <mrow>
+        <mi>Ancho de banda</mi>
+        <mo>(</mo>
+        <mi>Mbps</mi>
+        <mo>)</mo>
+      </mrow>
+    </mfrac>
+  </mrow>
+</math>
+
+<b>Ejemplo práctico:</b>
+
+Si existen dos caminos posibles entre dos redes:
+
+* Un enlace de 100 Mbps tendría un costo de 1.
+
+* Un enlace de 10 Mbps tendría un costo de 10.
+
+En este caso, OSPF seleccionaría el enlace de 100 Mbps como el camino óptimo, dado su menor costo.
+
+Esta metodología permite que OSPF no solo elija rutas más cortas, sino también aquellas más eficientes en términos de capacidad de transmisión de datos.
+
+<img class="img" src="./imgs/osfp_image.png">
+
+`,
 
 //respuesta16
-`Respuesta 16`,
+`El Protocolo de Resolución de Direcciones (ARP) es un protocolo de red de nivel 2 utilizado para asociar una dirección IP lógica con una dirección física MAC (Media Access Control) dentro de una red local. Su función principal es permitir que un dispositivo que conoce la dirección IP de destino pueda obtener su dirección MAC correspondiente, necesaria para el envío de tramas en redes Ethernet.
+
+Las direcciones IP, asignadas dinámicamente por servicios como DHCP, pueden cambiar con frecuencia, mientras que las direcciones MAC son únicas y permanentes para cada dispositivo. ARP actúa como intermediario para resolver esta diferencia, asegurando la correcta entrega de paquetes dentro de una red local.
+
+Cuando un dispositivo necesita comunicarse con otro en la misma red, envía una solicitud ARP (ARP Request) preguntando "¿Quién tiene esta IP?", y el dispositivo con esa IP responde con su dirección MAC (ARP Reply). Este proceso permite completar la trama Ethernet con la dirección de destino correcta.
+
+<img class="img" src="./imgs/arp_image.png">
+`,
 
 //respuesta17
-`Respuesta 17`,
+`Un firewall es un sistema de seguridad que actúa como una barrera protectora entre una red privada segura y una red externa no confiable, como Internet. Su función principal es permitir o bloquear el tráfico de datos basado en un conjunto de reglas de seguridad predeterminadas.
+Este sistema puede estar implementado en forma de hardware, software o como una combinación de ambos. Un firewall no solo filtra paquetes de datos, sino que también puede realizar inspección profunda de paquetes, detectar amenazas conocidas y prevenir ataques como accesos no autorizados, malware y explotación de vulnerabilidades.
+
+Los firewalls modernos permiten definir políticas de seguridad avanzadas, controlar aplicaciones específicas y gestionar conexiones cifradas. Además, ofrecen capacidades de monitoreo continuo para identificar y responder a incidentes en tiempo real, reforzando así la postura de seguridad general de la organización.
+
+En resumen, el firewall es un componente fundamental para garantizar la integridad, confidencialidad y disponibilidad de la información en redes corporativas y personales.
+
+<img class="img" src="./imgs/firewall_image.png">
+`,
 
 //respuesta18
 `Respuesta 18`,
@@ -501,6 +584,7 @@ Cada capa interactúa con la capa superior e inferior para completar la comunica
 <strong>Resultados Micaela Casebonne</strong>
 
 <strong>Resultados Tomas Coa</strong>
+<img class="img" src="./imgs/tomastest_image.png">
 
 <strong>Resultados Manuel Torrealba</strong>`,
 
@@ -616,7 +700,13 @@ En sisntesis: IPv6 soluciona los problemas de agotamiento de direcciones y ofrec
 
 <strong>Claudia Santivañes</strong>
 
-Actualmente no tengo experiencia profesional en redes, pero he configurado el router de mi casa para gestionar la conexión a internet, lo cual me permitió familiarizarme de manera básica con conceptos como redes Wi-Fi, contraseñas de seguridad y configuraciones de acceso. Además, estoy realizando el curso de redes de Cisco, el cual me ha sido de gran ayuda para adquirir nuevos conocimientos teóricos y prácticos en este campo.`,
+Actualmente no tengo experiencia profesional en redes, pero he configurado el router de mi casa para gestionar la conexión a internet, lo cual me permitió familiarizarme de manera básica con conceptos como redes Wi-Fi, contraseñas de seguridad y configuraciones de acceso. Además, estoy realizando el curso de redes de Cisco, el cual me ha sido de gran ayuda para adquirir nuevos conocimientos teóricos y prácticos en este campo.
+
+<strong>Coa Tomas</strong>
+
+La unica experiencia que tengo con redes es la configuracion de seguridad de la red personal de mi casa, haciendo cambios de contraseñas y reseteo de fabrica del router.
+`
+,
 ];
 
 const questions = data.trim().split('\n');
