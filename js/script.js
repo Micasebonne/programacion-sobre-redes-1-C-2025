@@ -597,7 +597,7 @@ Videollamadas y reuniones: Facilita reuniones virtuales con funciones como compa
 Integración con Microsoft 365: Se conecta con aplicaciones como Word, Excel y PowerPoint para una colaboración fluida.
 Espacios de trabajo organizados: Los equipos pueden crear canales para discutir proyectos específicos y compartir archivos.
 Seguridad y cumplimiento: Ofrece cifrado de datos y controles de acceso para proteger la información empresarial.
-<img class="img" src="./imgs/teams.png">
+<img class="img" src="./imgs/teams.jpg">
 `,
 
 //respuesta24
