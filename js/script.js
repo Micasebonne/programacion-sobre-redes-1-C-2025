@@ -511,28 +511,136 @@ En resumen, el firewall es un componente fundamental para garantizar la integrid
 `,
 
 //respuesta18
-`Respuesta 18`,
+`Una zona desmilitarizada es una red aislada que se encuentra dentro de la red interna de la organización. En ella se encuentran ubicados exclusivamente todos los recursos de la empresa que deben ser accesibles desde Internet, como el servidor web o de correo. 
+
+Por lo general, una DMZ permite las conexiones procedentes tanto de Internet, como de la red local de la empresa donde están los equipos de los trabajadores, pero las conexiones que van desde la DMZ a la red local, no están permitidas. 
+
+Esto se debe a que los servidores que son accesibles desde Internet son más susceptibles a sufrir un ataque que pueda comprometer su seguridad. Si un ciberdelincuente comprometiera un servidor de la zona desmilitarizada, tendría muchos más complicado acceder a la red local de la organización, ya que las conexiones procedentes de la DMZ se encuentran bloqueadas.
+<img class="img" src="./imgs/DMZ.png">
+`,
 
 //respuesta19
-`Respuesta 19`,
+`Gateway es un término inglés que significa puerta o portal. Es un tipo de enrutador que funciona como un punto de parada para los datos en su camino hacia otras redes. Gracias a los Gateway es posible la comunicación y envío de datos de un lado a otro. Internet no tendría la funcionalidad que tiene hoy en día sin las puertas de enlaces (así como un montón de otros dispositivos y programas).
+De igual forma, un Gateway es normalmente un equipo informático configurado para traducir los datos de un protocolo empleado en una red al protocolo utilizado en la red de destino. Esto podría ser un servidor, firewall (cortafuegos) u otro dispositivo que permita que el tráfico fluya hacia cualquier otra red.
+Una de las principales ventajas de usar Gateway en escenarios empresariales es la simplificación de la conectividad a Internet en un solo dispositivo.
+
+Todas las redes tienen un protocolo que limita la comunicación a los dispositivos. Debido a esto, si un dispositivo dentro de una red desea comunicarse con otro fuera de ella, requiere la funcionalidad de un Gateway.
+Los Gateway pueden adoptar varias formas con el propósito de cumplir ciertas tareas. Por ejemplo:
+
+Gateway de red: proporcionan una interfaz entre dos redes distintas que funcionan con varios protocolos.
+- Firewall de aplicaciones web: filtran el tráfico hacia y desde un servidor web, analizando los datos de la capa de aplicación.
+- Gateway de almacenamiento en la nube: es un servidor de red que descifra las solicitudes de almacenamiento en la nube. Además, permite almacenar la información en una sola red privada.
+- Gateway API: supervisan el flujo de tráfico dentro y fuera de un servicio.
+- Gateway loT: permiten agregar y transmitir datos a los sensores en un entorno loT (Internet de las cosas).
+- Gateway VoIP: facilitan el uso de datos con los servicios de telefonía antiguo.
+- Gateway de seguridad de email: evitan la entrada de correos electrónicos que no cumplan con la política de la empresa.
+
+Entonces podemos concluir que un Gateway es un equipo informático configurado para traducir los datos de un protocolo empleado en una red al protocolo utilizado en la red de destino. 
+<img class="img" src="./imgs/gateway.png">
+`,
 
 //respuesta20
-`Respuesta 20`,
+`Microsoft define NLB o Network Load Balancing como una tecnología de Windows Server que permite distribuir el tráfico de red entre múltiples servidores dentro de un clúster. Su objetivo principal es mejorar la disponibilidad, escalabilidad y rendimiento de aplicaciones críticas, como servidores web, VPN, proxy y firewall.
+¿Cómo funciona?
+NLB opera mediante la asignación de una única dirección IP virtual a un grupo de servidores, conocidos como hosts. Cuando un cliente envía una solicitud, NLB distribuye la carga entre los servidores disponibles, asegurando que ninguno se sobrecargue. Además, si un servidor falla, NLB redistribuye automáticamente el tráfico a los demás servidores activos.
+Características clave:
+
+- Alta disponibilidad: Si un servidor se desconecta, la carga se redistribuye sin interrupciones.
+- Escalabilidad dinámica: Se pueden agregar nuevos servidores al clúster sin afectar el servicio.
+- Distribución eficiente: Se puede configurar la cantidad de tráfico que cada servidor maneja.
+- Modos de operación: Funciona en unidifusión o multidifusión, dependiendo de la configuración de red.
+Aplicaciones prácticas:
+NLB es ideal para aplicaciones sin estado, como servidores web con Internet Information Services (IIS), donde la carga de trabajo puede distribuirse sin afectar la experiencia del usuario.
+<img class="img" src="./imgs/microsoft.png">
+`,
 
 //respuesta21
-`Respuesta 21`,
+`Explicación de cada tipo de enlace:
+MPLS (Multiprotocol Label Switching): Tecnología de red que optimiza el enrutamiento de paquetes mediante etiquetas, mejorando la velocidad y eficiencia del tráfico de datos. Se usa en redes empresariales y proveedores de servicios.
+LAN to LAN: Conexión directa entre dos redes locales (LAN) a través de fibra óptica, VPN o enlaces dedicados. Ideal para empresas con múltiples sucursales.
+Microondas: Comunicación inalámbrica de alta frecuencia que permite la transmisión de datos entre dos puntos con línea de vista. Se usa en telecomunicaciones y enlaces de respaldo.
+VSAT (Very Small Aperture Terminal): Tecnología satelital que permite conectividad en zonas remotas mediante antenas pequeñas. Se usa en minería, petróleo y zonas rurales.
+b. Dos tipos de enlaces adicionales:
+Fibra óptica: Tecnología de transmisión de datos mediante pulsos de luz en cables de fibra. Ofrece alta velocidad y baja latencia.
+5G: Red móvil de última generación con alta velocidad y baja latencia, ideal para IoT y aplicaciones en tiempo real.
+c. Ranking de enlaces según criterios:
+
+<img class="img" src="./imgs/tablerank.png">
+
+d. Elección de enlace según escenarios:
+  d.1. Conectividad de varios call centers con un data center central → MPLS, por su capacidad de gestionar tráfico de manera eficiente y segura.
+  d.2. Conectar los datos de los pozos petroleros durante 15 minutos por día → VSAT, ya que permite conectividad en zonas remotas sin infraestructura terrestre.
+  d.3. Comunicar dos edificios enfrentados en la misma calle → LAN to LAN, usando fibra óptica o radioenlace de microondas para una conexión rápida y estable.
+<img class="img" src="./imgs/LTE.png">
+`,
 
 //respuesta22
-`Respuesta 22`,
+`LTE (Long Term Evolution) es una tecnología de comunicación móvil que representa una evolución del 3G hacia el 4G. Aunque a menudo se le llama 4G, técnicamente es una tecnología 3.9G, ya que no cumple completamente con los requisitos de la ITU para ser considerada 4G. LTE mejora la velocidad de transmisión de datos, la latencia y la eficiencia espectral, permitiendo conexiones más rápidas y estables en dispositivos móviles.
+Características principales de LTE:
+Mayor velocidad: LTE permite velocidades de descarga de hasta 300 Mbps y de subida de hasta 75 Mbps, dependiendo de la infraestructura y el espectro disponible.
+Menor latencia: La latencia en LTE es significativamente menor que en redes 3G, lo que mejora la experiencia en aplicaciones en tiempo real como videollamadas y juegos en línea.
+Eficiencia espectral: LTE optimiza el uso del espectro radioeléctrico, permitiendo una mejor distribución del tráfico y mayor capacidad de usuarios conectados simultáneamente.
+Arquitectura basada en IP: LTE utiliza una arquitectura completamente basada en conmutación de paquetes, eliminando la dependencia de circuitos tradicionales.
+LTE vs. LTE Advanced:
+LTE Advanced es una evolución de LTE que cumple con los estándares de IMT-Advanced, lo que lo convierte en una verdadera tecnología 4G. 
+Algunas mejoras incluyen:
+Carrier Aggregation: Permite combinar múltiples bandas de frecuencia para aumentar la velocidad de transmisión.
+MIMO avanzado: Usa múltiples antenas para mejorar la eficiencia y cobertura.
+Mayor capacidad: LTE Advanced puede alcanzar velocidades de hasta 1 Gbps en condiciones óptimas.
+`,
 
 //respuesta23
-`Respuesta 23`,
+`Microsoft Teams es una plataforma de comunicación y colaboración desarrollada por Microsoft que permite a los equipos trabajar juntos de manera eficiente, independientemente de su ubicación.
+Características principales:
+Mensajería instantánea: Permite chats individuales y grupales para una comunicación rápida.
+Videollamadas y reuniones: Facilita reuniones virtuales con funciones como compartir pantalla y grabación.
+Integración con Microsoft 365: Se conecta con aplicaciones como Word, Excel y PowerPoint para una colaboración fluida.
+Espacios de trabajo organizados: Los equipos pueden crear canales para discutir proyectos específicos y compartir archivos.
+Seguridad y cumplimiento: Ofrece cifrado de datos y controles de acceso para proteger la información empresarial.
+<img class="img" src="./imgs/teams.png">
+`,
 
 //respuesta24
-`Respuesta 24`,
+`Aplicar calidad en un enlace MPLS implica optimizar la transmisión de datos mediante la gestión eficiente del tráfico y la asignación de recursos dentro de la red. MPLS utiliza la conmutación de etiquetas para dirigir los paquetes de datos de manera más rápida y eficiente que el enrutamiento tradicional basado en IP.
+
+Aspectos clave de la calidad en MPLS
+
+Calidad de Servicio (QoS): MPLS permite priorizar ciertos tipos de tráfico, asegurando que aplicaciones críticas (como videoconferencias o VoIP) tengan un rendimiento óptimo. Esto se logra mediante la clasificación de paquetes y la asignación de niveles de prioridad.
+Reducción de latencia: Al establecer rutas predefinidas, MPLS minimiza el tiempo de transmisión de datos, mejorando la experiencia del usuario. Esto es especialmente útil en entornos donde la baja latencia es crucial, como en el comercio financiero o el gaming en línea.
+Mayor estabilidad: La conmutación de etiquetas evita congestiones en la red, asegurando una conexión más confiable. Esto significa que los datos viajan por rutas optimizadas sin depender de la lógica de enrutamiento tradicional.
+Seguridad mejorada: MPLS segmenta el tráfico, reduciendo el riesgo de interferencias externas. Aunque no es una tecnología de seguridad por sí misma, su capacidad de aislamiento de tráfico lo hace más seguro que el enrutamiento IP convencional.
+Optimización del ancho de banda: MPLS permite una mejor utilización del ancho de banda al evitar el reenvío innecesario de paquetes y mejorar la eficiencia de la red. Esto es clave para empresas que manejan grandes volúmenes de datos y requieren conexiones estables.
+
+Beneficios de aplicar calidad en MPLS
+Mejor rendimiento de aplicaciones críticas: Al priorizar el tráfico, las aplicaciones esenciales funcionan sin interrupciones.
+Menos interrupciones en la red: La estabilidad de MPLS reduce la posibilidad de fallos en la conectividad.
+Mayor eficiencia operativa: La optimización del tráfico permite un uso más eficiente de los recursos de red.
+Escalabilidad: MPLS facilita la expansión de redes empresariales sin comprometer la calidad del servicio.
+`,
 
 //respuesta25
-`Respuesta 25`,
+`Diferencias entre Coaxial, UTP y Fibra Óptica
+<img class="img" src="./imgs/coaxial.png">
+
+1. Cable Coaxial
+Transmisión: Usa un conductor central de cobre rodeado por una capa de aislamiento y una malla metálica para reducir interferencias.
+Velocidad: Puede alcanzar hasta 500 Mbps, aunque depende de la infraestructura.
+Distancia: Funciona bien en distancias medias, pero sufre degradación en tramos largos.
+Uso común: Se emplea en televisión por cable e internet de banda ancha.
+2. Cable UTP (Par Trenzado)
+Transmisión: Usa pares de cables de cobre trenzados para reducir interferencias electromagnéticas.
+Velocidad: Puede alcanzar hasta 10 Gbps, dependiendo de la categoría del cable.
+Distancia: Eficiente en distancias cortas (hasta 100 metros), pero pierde calidad en tramos largos.
+Uso común: Se usa en redes Ethernet y telecomunicaciones.
+3. Fibra Óptica
+Transmisión: Usa pulsos de luz a través de hilos de vidrio o plástico, lo que permite una transmisión más rápida y estable.
+Velocidad: Puede alcanzar hasta 200 Gbps en redes avanzadas.
+Distancia: Funciona en largas distancias sin pérdida de señal (hasta 80 km).
+Uso común: Se emplea en internet de alta velocidad, redes empresariales y telecomunicaciones avanzadas.
+Comparación general
+<img class="img" src="./imgs/table2.png">
+
+`,
 
 //respuesta26
 `CCENT (Cisco Certified Entry Networking Technician): Era la certificación de nivel inicial en redes de Cisco. Certificaba conocimientos básicos en redes pequeñas y medianas, incluyendo instalación, operación y solución de problemas. Esta certificación fue retirada en 2020.
@@ -586,7 +694,10 @@ Cada capa interactúa con la capa superior e inferior para completar la comunica
 <strong>Resultados Tomas Coa</strong>
 <img class="img" src="./imgs/tomastest_image.png">
 
-<strong>Resultados Manuel Torrealba</strong>`,
+<strong>Resultados Manuel Torrealba</strong>
+<img class="img" src="./imgs/manueltest.png">
+
+`,
 
 //respuesta29
 `El estándar IEEE 802.3 define el funcionamiento de las redes Ethernet cableadas.
