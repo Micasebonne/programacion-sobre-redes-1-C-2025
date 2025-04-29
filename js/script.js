@@ -412,7 +412,7 @@ Desventajas:
 Esto es importante porque, aunque nosotros recordamos palabras fácilmente, los dispositivos en la red solo entienden direcciones IP. El DNS actúa como una agenda telefónica de Internet, donde buscás el número (IP) correspondiente a un nombre.
 
 <img class="img" src="./imgs/dns_image.png">
-`, //Completar el espacio entre comillas
+`,
 
 //respuesta12
 `Las tecnologías Wireless (inalámbricas) permiten la transmisión de datos sin necesidad de cables físicos, utilizando ondas de radio, infrarrojos u otros tipos de señales electromagnéticas. Son ampliamente utilizadas en redes locales (Wi-Fi), comunicaciones móviles (3G/4G/5G), Bluetooth y más.
@@ -698,6 +698,7 @@ Cada capa interactúa con la capa superior e inferior para completar la comunica
 <img src="./imgs/ResulClaudia3.png">
 
 <strong>Resultados Micaela Casebonne</strong>
+<img src="./imgs/micaelatest.png">
 
 <strong>Resultados Tomas Coa</strong>
 <img class="img" src="./imgs/tomastest_image.png">
@@ -812,7 +813,7 @@ También se puede usar POP3, aunque es menos flexible porque descarga y borra lo
   </tbody>
 </table>
 
-En sisntesis: IPv6 soluciona los problemas de agotamiento de direcciones y ofrece mayor seguridad y eficiencia, pero su adopción aún es parcial.`,
+En síntesis: IPv6 soluciona los problemas de agotamiento de direcciones y ofrece mayor seguridad y eficiencia, pero su adopción aún es parcial.`,
 
 //respuesta34
 `
@@ -830,6 +831,8 @@ Tengo experiencia en el área de redes, en procesos cloud como también on-premi
 Para garantizar el correcto funcionamiento del ERP, he adquirido conocimientos sobre su alojamiento, la distribución y replicación de información entre los distintos módulos. Además, he desarrollado habilidades en la creación de archivos .bat y scripts para la automatización de procesos en la red, incluyendo la administración de jobs en cada servidor. También tengo experiencia en el análisis de logs para detectar fallos en los procesos y asegurar la disponibilidad de los servidores.
 Mi experiencia me ha permitido entender la interconexión entre la infraestructura en la nube y los sistemas internos, facilitando la resolución de problemas y la optimización del rendimiento de la plataforma ERP.
 
+<strong>Micaela Casebonne</strong>
+No cuento con experiencia profesional en el área de redes, más si he adquirido algunos conocimientos debido a un curso de Ciberseguridad que realicé en el año 2023 en la Fundación Telefónica Movistar. En el marco del mismo, he realizado escaneo de puertos y redes, así como la redacción de un informe de mejora en infraestructura de red para una empresa ficticia que había recibido un ciberataque recientemente. 
 `
 ,
 ];
@@ -856,6 +859,16 @@ function renderQuestion(index) {
       </div>
     </div>
   `;
+
+  const nextBtn = document.getElementById('next-btn');
+
+  if (index === questions.length -1){
+    nextBtn.textContent = 'Finalizar';
+    nextBtn.onclick = finishQuiz;
+  }else {
+    nextBtn.textContent = 'Siguiente';
+    nextBtn.onclick = nextQuestion;
+  }
 }
 
 function toggleAnswer(index) {
@@ -903,4 +916,27 @@ function typeEffect(elementId, text, delay = 100) {
 
     const text = "Bienvenido al Trabajo Práctico de Redes";
     typeEffect("typing-effect", text, 100); // Aplica el efecto solo al texto del inicio
-  };
+    }
+  
+  function finishQuiz() {
+    document.getElementById('quiz-screen').style.display = 'none';
+    document.getElementById('end-screen').style.display = 'flex';
+    
+    // Limpia textos anteriores por si se reinicia
+    document.getElementById('end-typing-effect').innerHTML = '';
+    document.getElementById('end-paragraph').innerHTML = '';
+
+    typeEffect("end-typing-effect", "Protocolo completado!");
+  setTimeout(() => {
+    typeEffect("end-paragraph", "Gracias por participar en el Trabajo Práctico de Redes.");
+  }, 2000);
+};
+
+
+  function restartQuiz() {
+    currentIndex = 0;
+    document.getElementById('end-screen').style.display = 'none';
+    document.getElementById('welcome-screen').style.display = 'flex';
+    document.getElementById('end-typing-effect').innerHTML = '';
+  }
+  
