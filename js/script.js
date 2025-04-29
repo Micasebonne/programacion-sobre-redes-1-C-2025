@@ -406,53 +406,217 @@ Desventajas:
 
 * Seguridad: Si un servidor DHCP no está configurado correctamente o es vulnerable, un atacante podría intentar suplantarlo y asignar direcciones IP incorrectas a los dispositivos, lo que podría comprometer la red.`,
 
+//respuesta11
 `Respuesta 11`, //Completar el espacio entre comillas
 
+//respuesta12
 `Respuesta 12`,
 
+//respuesta13
 `Respuesta 13`,
 
+//respuesta14
 `Respuesta 14`,
 
+//respuesta15
 `Respuesta 15`,
 
+//respuesta16
 `Respuesta 16`,
 
+//respuesta17
 `Respuesta 17`,
 
+//respuesta18
 `Respuesta 18`,
 
+//respuesta19
 `Respuesta 19`,
 
+//respuesta20
 `Respuesta 20`,
 
+//respuesta21
 `Respuesta 21`,
 
+//respuesta22
 `Respuesta 22`,
 
+//respuesta23
 `Respuesta 23`,
 
+//respuesta24
 `Respuesta 24`,
 
+//respuesta25
 `Respuesta 25`,
 
-`Respuesta 26`,
+//respuesta26
+`CCENT (Cisco Certified Entry Networking Technician): Era la certificación de nivel inicial en redes de Cisco. Certificaba conocimientos básicos en redes pequeñas y medianas, incluyendo instalación, operación y solución de problemas. Esta certificación fue retirada en 2020.
 
-`Respuesta 27`,
+CCNA (Cisco Certified Network Associate): Es una certificación de nivel intermedio que valida habilidades en instalación, configuración, operación y solución de problemas de redes medianas, así como conocimientos básicos de seguridad, automatización y programación.
 
-"Respuesta 28",
+CCNP (Cisco Certified Network Professional): Es una certificación de nivel avanzado. Acredita habilidades profesionales en el manejo de redes complejas, incluyendo configuración avanzada, solución de problemas, implementación de redes de gran escala y tecnologías especializadas como seguridad, colaboración y servicios en la nube
 
-`Respuesta 29`,
+Track Routing & Switching (ahora llamado "Enterprise Networking")
+ Este track está enfocado en el diseño, implementación y solución de problemas de redes empresariales LAN/WAN, incluyendo protocolos de enrutamiento como OSPF, EIGRP y BGP, y configuraciones avanzadas de switches y routers.
 
-`Respuesta 30`,
+Otro track: Security
+ La certificación en Security prepara a los profesionales para asegurar las redes de una organización contra amenazas internas y externas. Incluye conocimientos en firewalls, VPNs, control de acceso, protección contra malware y estrategias de defensa.`,
 
-`Respuesta 31`,
+ //respuesta27
+`El modelo OSI (Open Systems Interconnection) es un marco teórico que describe cómo se comunican los sistemas de red. Divide el proceso de comunicación en 7 capas, cada una con funciones específicas:
 
-`Respuesta 32`,
+1- Capa física: Transmisión de bits a través del medio físico (cables, señales eléctricas, ópticas, etc.).
 
-`Respuesta 33`,
 
-`Respuesta 34`,
+2- Capa de enlace de datos: Asegura una transferencia libre de errores entre dos dispositivos conectados directamente (MAC, switches).
+
+
+3- Capa de red: Encaminamiento de datos entre dispositivos de diferentes redes (IP, routers).
+
+
+4- Capa de transporte: Garantiza la entrega correcta de datos (TCP/UDP).
+
+
+5- Capa de sesión: Establece, administra y termina sesiones entre aplicaciones.
+
+
+6- Capa de presentación: Traduce, cifra o comprime datos para la aplicación (formatos como JPEG, ASCII, SSL/TLS).
+
+
+7- Capa de aplicación: Interfaz directa para el usuario final y las aplicaciones (HTTP, FTP, SMTP).
+
+
+Cada capa interactúa con la capa superior e inferior para completar la comunicación de red.`,
+
+//respuesta28
+`
+
+<strong>Resultados Claudia Santivañez</strong>
+<img src="./imgs/ResulClaudia1.png">
+<img src="./imgs/ResulClaudia2.png">
+<img src="./imgs/ResulClaudia3.png">
+
+<strong>Resultados Micaela Casebonne</strong>
+
+<strong>Resultados Tomas Coa</strong>
+
+<strong>Resultados Manuel Torrealba</strong>`,
+
+//respuesta29
+`El estándar IEEE 802.3 define el funcionamiento de las redes Ethernet cableadas.
+ Especifica aspectos como:
+
+- El método de acceso al medio (CSMA/CD en versiones antiguas),
+
+- Las velocidades de transmisión (desde 10 Mbps hasta 400 Gbps),
+
+- El tipo de cableado (UTP, fibra óptica),
+
+- Y las conexiones físicas.
+
+Implementación: Se implementa utilizando switches, routers y cables específicos (normalmente UTP Cat 5e, Cat 6, Cat 6a o fibra).
+Ventajas:
+
+- Alta confiabilidad.
+
+- Gran velocidad y ancho de banda.
+
+- Bajo costo en instalaciones locales.
+
+Desventajas:
+- Limitado a redes cableadas (menor flexibilidad frente a Wireless).
+
+- Costos de cableado en grandes instalaciones.`,
+
+//respuesta30
+`El estándar IEEE 802.4 regula el acceso al medio en redes Token Bus.
+ En esta tecnología, los dispositivos forman una red lógica en forma de bus donde un "token" (una señal especial) circula entre los nodos. Solo el dispositivo que tiene el token puede transmitir datos, evitando colisiones.
+Ventajas:
+- Muy efectivo en evitar colisiones.
+
+- Adecuado para aplicaciones industriales donde se requiere comunicación ordenada y predecible.
+
+Desventajas:
+- Complejidad en la gestión del token.
+
+- Obsoleto frente a tecnologías Ethernet modernas (802.3).`,
+
+//respuesta31
+`SMTP (Simple Mail Transfer Protocol):
+ Utilizado para enviar correos electrónicos desde un cliente a un servidor o entre servidores.
+
+POP3 (Post Office Protocol v3):
+ Utilizado para recibir correos descargándolos desde el servidor al cliente. Una vez descargados, los correos generalmente se eliminan del servidor.
+
+IMAP (Internet Message Access Protocol):
+ Utilizado para recibir correos, pero manteniéndolos almacenados en el servidor, permitiendo sincronización entre múltiples dispositivos.`,
+
+//respuesta32
+`El protocolo más usado para leer correos recibidos es:
+
+IMAP, ya que permite acceder y gestionar los mensajes directamente en el servidor, ideal para acceder desde varios dispositivos.
+
+También se puede usar POP3, aunque es menos flexible porque descarga y borra los correos del servidor.`,
+
+//respuesta33
+`<table border="1" cellpadding="10" cellspacing="0">
+  <thead>
+    <tr>
+      <th><strong>Caracteristica</strong></th>
+      <th><strong>IPv4</strong></th>
+      <th><strong>IPv6</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Longitud de la dirección</strong></td>
+      <td>32 bits</td>
+      <td>128 bits</td>
+    </tr>
+    <tr>
+      <td><strong>Formato</strong></td>
+      <td>Decimal (ej.: 192.168.0.1)</td>
+      <td>Hexadecimal (ej.: 2001:0db8:85a3:0000:0000:8a2e:0370:7334)</td>
+    </tr>
+    <tr>
+      <td><strong>Cantidad de direcciones</strong></td>
+      <td>~4.3 mil millones</td>
+      <td>3.4 x 10^38</td>
+    </tr>
+    <tr>
+      <td><strong>NAT necesario</strong></td>
+      <td>Sí, por escasez de direcciones</td>
+      <td>No, gracias a la gran cantidad de direcciones</td>
+    </tr>
+    <tr>
+      <td><strong>Seguridad</strong></td>
+      <td>Opcional (IPSec)</td>
+      <td>Integrada por defecto (IPSec)</td>
+    </tr>
+    <tr>
+      <td><strong>Configuracion</strong></td>
+      <td>Manual o por DHCP</td>
+      <td>Automática (Stateless Address Autoconfiguration)</td>
+    </tr>
+    <tr>
+      <td><strong>Compatibilidad</strong></td>
+      <td>Infraestructura ampliamente instalada</td>
+      <td>Se requiere compatibilidad o migración</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+En sisntesis: IPv6 soluciona los problemas de agotamiento de direcciones y ofrece mayor seguridad y eficiencia, pero su adopción aún es parcial.`,
+
+//respuesta34
+`
+
+<strong>Claudia Santivañes</strong>
+
+Actualmente no tengo experiencia profesional en redes, pero he configurado el router de mi casa para gestionar la conexión a internet, lo cual me permitió familiarizarme de manera básica con conceptos como redes Wi-Fi, contraseñas de seguridad y configuraciones de acceso. Además, estoy realizando el curso de redes de Cisco, el cual me ha sido de gran ayuda para adquirir nuevos conocimientos teóricos y prácticos en este campo.`,
 ];
 
 const questions = data.trim().split('\n');
