@@ -656,7 +656,15 @@ Otro track: Security
  La certificación en Security prepara a los profesionales para asegurar las redes de una organización contra amenazas internas y externas. Incluye conocimientos en firewalls, VPNs, control de acceso, protección contra malware y estrategias de defensa.`,
 
  //respuesta27
-`El modelo OSI (Open Systems Interconnection) es un marco teórico que describe cómo se comunican los sistemas de red. Divide el proceso de comunicación en 7 capas, cada una con funciones específicas:
+`El modelo OSI (Open Systems Interconnection) es un modelo de referencia para los
+protocolos de comunicación de las redes informáticas o redes de computadoras.
+Podemos decir que es una herramienta que define la funcionalidad de los protocolos,
+para conseguir un estándar de comunicación, o sea, lograr que todos los sistemas
+hablen el mismo idioma. Sin él, una red tan vasta como Internet sería
+prácticamente imposible.
+
+Contempla 7 capas donde cada una contempla funciones específicas para garantizar
+la comunicación.
 
 1- Capa física: Transmisión de bits a través del medio físico (cables, señales eléctricas, ópticas, etc.).
 
